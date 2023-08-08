@@ -13,7 +13,7 @@ const hidePreloader = () => {
     const contentToHide = document.querySelector(".content-to-hide");
     
     gsap.to(".preloader", {
-        duration: 1,
+        duration: 5,
         opacity: 0,
         onComplete: () => {
             const preloader = document.querySelector(".preloader");

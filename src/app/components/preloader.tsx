@@ -3,8 +3,6 @@
 import React, { useEffect } from 'react';
 import { preLoaderAnim } from '../../animations/index';
 import '../../styles/preloader.scss';
-import preloader from '../preloader.gif';
-import Image from 'next/image';
 
 function Preloader() {
     useEffect(() => {
@@ -13,9 +11,18 @@ function Preloader() {
 
     return (
         <>
-            <div className="preloader">
-                <Image src={preloader} alt="preloader"/>
+            <div className="container preloader bg-blue-50">
+                <div className="loader">
+                    <div className="loader--dot"></div>
+                    <div className="loader--dot"></div>
+                    <div className="loader--dot"></div>
+                    <div className="loader--dot"></div>
+                    <div className="loader--dot"></div>
+                    <div className="loader--dot"></div>
+                    <div className="loader--text"></div>
+                </div>
             </div>
+
         </>
     )
 }

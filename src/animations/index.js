@@ -3,7 +3,7 @@ import gsap from "gsap";
 export const preLoaderAnim = () => {
 
     gsap.to(".preloader", {
-        duration: 1,
+        duration: 3,
         opacity: 1,
         onComplete: hidePreloader,
     });
@@ -13,7 +13,7 @@ const hidePreloader = () => {
     const contentToHide = document.querySelector(".content-to-hide");
     
     gsap.to(".preloader", {
-        duration: 5,
+        duration: 1,
         opacity: 0,
         onComplete: () => {
             const preloader = document.querySelector(".preloader");
@@ -21,7 +21,6 @@ const hidePreloader = () => {
                 preloader.style.display = "none";
             }
             
-            // Rétablir l'opacité du contenu masqué
             if (contentToHide) {
                 contentToHide.style.opacity = 1;
             }

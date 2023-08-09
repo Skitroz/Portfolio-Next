@@ -10,7 +10,7 @@ function Apropos() {
             </div>
             <div className="flex flex-col space-y-6 pt-16 text-left mx-10 pb-20 md:pb-0 text-secondary md:text-lg">
                 <h2 className="font-black text-xl md:text-2xl">À propos</h2>
-                <p className="md:w-[400px]">Je m'appelle Mathéo Batelier, étudiant en deuxième année à la Normandie Web School, déterminé à devenir un développeur web créatif et compétent, explorant les multiples facettes du développement pour créer des expériences en ligne exceptionnelles.</p>
+                <p className="md:w-[400px]">Je m&apos;appelle Mathéo Batelier, étudiant en deuxième année à la Normandie Web School, déterminé à devenir un développeur web créatif et compétent, explorant les multiples facettes du développement pour créer des expériences en ligne exceptionnelles.</p>
                 <button className="text-text">
                     <a href="#" className="px-6 py-3 bg-background rounded-2xl transition-all duration-500 hover:bg-blue-300">Recrutez-moi</a>
                 </button>

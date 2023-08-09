@@ -26,7 +26,7 @@ function Header() {
     ]
 
     return (
-        <header className="bg-secondary text-text font-custom">
+        <header className="bg-bakcground text-text font-custom">
             <div className='mx-auto px-4 sm:px-6 lg:px-8'>
                 <div className='flex items-center justify-center gap-40 sm:h-16'>
                     <div className='flex justify-center items-center w-screen sm:w-auto'>
@@ -41,7 +41,7 @@ function Header() {
                         </div>
                     </div>
                     <div className=''>
-                        <button><a href="#contact" className='px-6 py-3 bg-primary rounded-2xl transition-all duration-500 hover:bg-blue-300'>Contact</a></button>
+                        <button><a href="#contact" className='px-6 py-3 bg-background rounded-2xl transition-all duration-500 hover:bg-blue-300'>Contact</a></button>
                     </div>
                 </div>
                 {/* menu responsive */}

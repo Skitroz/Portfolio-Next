@@ -5,7 +5,7 @@ import Main from './main';
 function Accueil(){
     return (
         <>
-            <div className='bg-background h-screen w-screen'>
+            <div className='bg-accent'>
                 <Header />
                 <Main/>
                 <Footer />

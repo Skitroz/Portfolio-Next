@@ -26,11 +26,11 @@ function Header() {
     ]
 
     return (
-        <header className="bg-bakcground text-text font-custom">
+        <header className="bg-bakcground text-text font-custom sticky top-0 z-50 bg-secondary">
             <div className='mx-auto px-4 sm:px-6 lg:px-8'>
                 <div className='flex items-center justify-center gap-40 sm:h-16'>
                     <div className='flex justify-center items-center w-screen sm:w-auto'>
-                        <a href="/"><Image src={Logo} alt='' width={80} /></a>
+                        <a href="/"><Image src={Logo} alt='' width={64} className='md:bg-accent' /></a>
                     </div>
                     {/* navlinks */}
                     <div className='hidden md:flex md:items-center'>
@@ -41,7 +41,7 @@ function Header() {
                         </div>
                     </div>
                     <div className=''>
-                        <button><a href="#contact" className='px-6 py-3 bg-background rounded-2xl transition-all duration-500 hover:bg-blue-300'>Contact</a></button>
+                        <button><a href="#contact" className='px-6 py-3 bg-accent rounded-2xl transition-all duration-500 hover:bg-blue-600 text-secondary'>Contact</a></button>
                     </div>
                 </div>
                 {/* menu responsive */}

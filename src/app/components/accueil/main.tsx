@@ -1,4 +1,5 @@
 import Apropos from "./a-propos";
+import Portfolio from "./portfolio";
 
 function Main() {
     return (
@@ -17,6 +18,9 @@ function Main() {
                 </div>
                 <Apropos />
             </main>
+            <section className="font-custom">
+                <Portfolio />
+            </section>
         </>
     )
 }

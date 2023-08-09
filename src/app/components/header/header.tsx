@@ -4,30 +4,22 @@ import Logo from "./img/logo.png";
 
 function Header() {
     return (
-        <>
-            <div>
-                <nav className='flex justify-center items-center gap-40 mx-4 py-4'>
-                    <div>
-                        <ul className='flex gap-4 text-text'>
-                            <li><a href="/projet-web">Web</a></li>
-                            <li><a href="/projet-graphique">Graphique</a></li>
-                            <li><a href="/information">Information</a></li>
-                        </ul>
-                    </div>
-                    <div>
-                        <a href="/"><Image src={Logo} alt="Logo Mathéo BATELIER" width={80} height={100} /></a>
-                    </div>
-                    <div>
-                        <ul className='flex gap-4 text-text'>
-                            <li><a href="https://www.instagram.com/skitroz/" target='_blank' className='flex gap-1 items-center justify-center'><FiInstagram /> Instagram</a></li>
-                            <li><a href="https://github.com/Skitroz" target='_blank' className='flex gap-1 items-center justify-center'><FiGithub />Github</a></li>
-                            <li><a href="https://www.linkedin.com/in/matheobtl/" target='_blank' className='flex gap-1 items-center justify-center'><FiLinkedin />LinkedIn</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        </>
-    )
+        <header className='py-4 text-text font-custom'>
+            <nav className='flex justify-evenly items-center'>
+                <div>
+                    <a href="/"><Image src={Logo} alt='Logo de Mathéo BATELIER' width={80}/></a>
+                </div>
+                <ul className='flex gap-10'>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#a-propos">À propos</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#competence">Compétence</a></li>
+                    <li><button><a href="#contact" className='bg-primary py-4 px-8 rounded-xl'>Contact</a></button></li>
+                </ul>
+            </nav>
+        </header>
+    );
 }
 
 export default Header;

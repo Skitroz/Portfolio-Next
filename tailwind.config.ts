@@ -8,12 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        custom: ['"JetBrains Mono"', 'monospace'],
+      },
       colors: {
-        'text': '#f6e5ec',
-        'background': '#220c16',
-        'primary': '#752d29',
-        'secondary': '#0b0804',
-        'accent': '#b8b2b5',
+        'text': '#f5f3f7',
+        'background': '#0a080c',
+        'primary': '#34283e',
+        'secondary': '#100c13',
+        'accent': '#785d8e',
       },
     },
   },

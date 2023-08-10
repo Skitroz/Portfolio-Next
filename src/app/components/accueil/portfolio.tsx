@@ -76,7 +76,7 @@ const Portfolio: React.FC = () => {
                         <div className='md:flex'>
                             <div className='md:flex md:flex-col md:ml-8'>
                                 <h2 className='font-black text-primary text-2xl md:text-3xl mb-2 md:mb-4'>SkyzeProno</h2>
-                                <p className='text-left text-secondary text-lg md:text-xl mb-4 md:mb-8'>Projet personnel d'un site de pronostic totalement gratuit réalisé en HTML5 & CSS3
+                                <p className='text-left text-secondary text-lg md:text-xl mb-4 md:mb-8'>Projet personnel d&apos;un site de pronostic totalement gratuit réalisé en HTML5 & CSS3
                                     [EN DÉVELOPPEMENT]</p>
                                 <a href="#" className='flex items-center gap-2 text-blue-200 mb-2 md:mb-4 text-lg md:text-xl'>
                                     <BsArrowRightShort className='text-xl md:text-2xl' /> En savoir davantage
@@ -91,7 +91,7 @@ const Portfolio: React.FC = () => {
                     <div className='mx-10 pt-12 md:pt-[4.5rem] md:mx-80'>
                         <div className='md:flex md:flex-row-reverse'>
                             <div className='md:flex md:flex-col md:ml-8'>
-                                <h2 className='font-black text-primary text-2xl md:text-3xl mb-2 md:mb-4'>L'humain entre vos mains</h2>
+                                <h2 className='font-black text-primary text-2xl md:text-3xl mb-2 md:mb-4'>L&apos;humain entre vos mains</h2>
                                 <p className='text-left text-secondary text-lg md:text-xl mb-4 md:mb-8'>Projet associatif réalisé lors de mon stage en première année à la Normandie Web School.</p>
                                 <a href="#" className='flex items-center gap-2 text-blue-200 mb-2 md:mb-4 text-lg md:text-xl'>
                                     <BsArrowRightShort className='text-xl md:text-2xl' /> En savoir davantage

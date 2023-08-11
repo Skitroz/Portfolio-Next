@@ -3,7 +3,7 @@ import Matheo from "./img/Matheo.jpg";
 
 function Apropos() {
     return (
-        <div className="flex flex-col md:flex-row md:gap-16 justify-center items-center pt-20 md:py-32">
+        <div className="flex flex-col md:flex-row md:gap-16 justify-center items-center pt-20 md:py-32" id="a-propos">
             <div className="relative">
                 <div className="absolute inset-0 border-2 border-gray-800 transform rotate-12 shadow-lg rounded-[50px]"></div>
                 <Image src={Matheo} alt="Tête de Mathéo BATELIER" className="rounded-[50px] transform rotate-6 py-10 mx-auto relative z-10" width={300} height={300} />

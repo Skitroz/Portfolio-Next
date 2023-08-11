@@ -15,7 +15,7 @@ const Portfolio: React.FC = () => {
     };
 
     return (
-        <div>
+        <div id='portfolio'>
             <div className="md:pb-16 pb-10">
                 <h2 className="font-black text-xl md:text-2xl text-secondary text-center">Portfolio</h2>
                 <ul className="flex text-secondary justify-center items-center mx-10 gap-4 text-center pt-4 md:gap-20">
@@ -40,7 +40,7 @@ const Portfolio: React.FC = () => {
                 </ul>
             </div>
             {/* Contenu des sections */}
-            {openSection === 'siteInternet' && (
+            <div className={`transition-opacity ${openSection === 'siteInternet' ? 'opacity-100' : 'opacity-0 hidden'}`}>
                 <div>
                     <div className='mx-10 md:mx-80'>
                         <div className='md:flex'>
@@ -57,7 +57,7 @@ const Portfolio: React.FC = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='mx-10 pt-12 md:pt-[4.5rem] md:mx-80'>
+                    <div className='mx-10 pt-14 md:pt-[4.5rem] md:mx-80'>
                         <div className='md:flex md:flex-row-reverse'>
                             <div className='md:flex md:flex-col md:ml-8'>
                                 <h2 className='font-black text-primary text-2xl md:text-3xl mb-2 md:mb-4'>Louis Vuitton</h2>
@@ -72,7 +72,7 @@ const Portfolio: React.FC = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='mx-10 pt-12 md:pt-[4.5rem] md:mx-80'>
+                    <div className='mx-10 pt-14 md:pt-[4.5rem] md:mx-80'>
                         <div className='md:flex'>
                             <div className='md:flex md:flex-col md:ml-8'>
                                 <h2 className='font-black text-primary text-2xl md:text-3xl mb-2 md:mb-4'>SkyzeProno</h2>
@@ -88,7 +88,7 @@ const Portfolio: React.FC = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='mx-10 pt-12 md:pt-[4.5rem] md:mx-80'>
+                    <div className='mx-10 pt-14 md:pt-[4.5rem] md:mx-80'>
                         <div className='md:flex md:flex-row-reverse'>
                             <div className='md:flex md:flex-col md:ml-8'>
                                 <h2 className='font-black text-primary text-2xl md:text-3xl mb-2 md:mb-4'>L&apos;humain entre vos mains</h2>
@@ -103,15 +103,15 @@ const Portfolio: React.FC = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='mx-10 pt-12 md:pt-[4.5rem] md:mx-80'>
+                    <div className='mx-10 pt-14 md:pt-[4.5rem] md:mx-80'>
                         <div className='md:flex'>
-                        <div className='md:flex md:flex-col md:ml-8'>
-                            <h2 className='font-black text-primary text-2xl md:text-3xl mb-2 md:mb-4'>RebelStats</h2>
-                            <p className='text-left text-secondary text-lg md:text-xl mb-4 md:mb-8'>Projet personnel permettant de récupérer les statistiques des joueurs de League of Legends et bien plus encore
-                                [EN DÉVELOPPEMENT]</p>
-                            <a href="#" className='flex items-center gap-2 text-blue-200 mb-2 md:mb-4 text-lg md:text-xl'>
-                                <BsArrowRightShort className='text-xl md:text-2xl' /> En savoir davantage
-                            </a>
+                            <div className='md:flex md:flex-col md:ml-8'>
+                                <h2 className='font-black text-primary text-2xl md:text-3xl mb-2 md:mb-4'>RebelStats</h2>
+                                <p className='text-left text-secondary text-lg md:text-xl mb-4 md:mb-8'>Projet personnel permettant de récupérer les statistiques des joueurs de League of Legends et bien plus encore
+                                    [EN DÉVELOPPEMENT]</p>
+                                <a href="#" className='flex items-center gap-2 text-blue-200 mb-2 md:mb-4 text-lg md:text-xl'>
+                                    <BsArrowRightShort className='text-xl md:text-2xl' /> En savoir davantage
+                                </a>
                             </div>
                             <div className='pb-4 relative'>
                                 <div className='absolute inset-0 border-4 border-primary mt-4 md:mb-[32px]'></div>
@@ -120,17 +120,17 @@ const Portfolio: React.FC = () => {
                         </div>
                     </div>
                 </div>
-            )}
-            {openSection === 'projetGraphique' && (
+            </div>
+            <div className={`transition-opacity ${openSection === 'projetGraphique' ? 'opacity-100' : 'opacity-0 hidden'}`}>
                 <div>
                     <p>Projet</p>
                 </div>
-            )}
-            {openSection === 'autreProjet' && (
+            </div>
+            <div className={`transition-opacity ${openSection === 'autreProjet' ? 'opacity-100' : 'opacity-0 hidden'}`}>
                 <div>
                     <p>Autre</p>
                 </div>
-            )}
+            </div>
         </div>
     );
 };

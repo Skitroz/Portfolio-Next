@@ -1,5 +1,7 @@
 import Apropos from "./a-propos";
 import Portfolio from "./portfolio";
+import Service from "./service";
+import Competence from "./competence";
 
 function Main() {
     return (
@@ -20,6 +22,12 @@ function Main() {
             </main>
             <section className="font-custom">
                 <Portfolio />
+            </section>
+            <section className="font-custom">
+                <Service />
+            </section>
+            <section className="font-custom">
+                <Competence />
             </section>
         </>
     )

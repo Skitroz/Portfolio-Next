@@ -16,12 +16,12 @@ function Header() {
             link: '#portfolio',
         },
         {
-            title: 'Service',
+            title: 'Services',
             link: '#service',
         },
         {
-            title: 'Expérience',
-            link: '#experience',
+            title: 'Compétences',
+            link: '#competence',
         },
     ];
 

@@ -2,6 +2,7 @@ import Apropos from "./a-propos";
 import Portfolio from "./portfolio";
 import Service from "./service";
 import Competence from "./competence";
+import Contact from "./contact";
 
 function Main() {
     return (
@@ -28,6 +29,9 @@ function Main() {
             </section>
             <section className="font-custom">
                 <Competence />
+            </section>
+            <section className="font-custom">
+                <Contact />
             </section>
         </>
     )
